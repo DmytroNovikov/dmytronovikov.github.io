@@ -1,0 +1,63 @@
+body {
+    background-color: #7750f8;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.adv {
+    margin: 30px;
+    text-align: center;
+}
+
+a:hover.gofrontend {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    color: #ef6701;
+    padding: 5px;
+}
+
+.gofrontend {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 64px;
+    text-decoration: none;
+}
+
+.g_table {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 14pt;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.g_table_header {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.g_table_theme {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 3px 3px;
+}
+
+.g_table_grade {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    text-align: center;
+    font-style: italic;
+    padding: 3px 3px;
+}
+
+a:visited.link_to_hw,
+.link_to_hw {
+    color: #fff;
+    display: block;
+    font-style: italic;
+}
