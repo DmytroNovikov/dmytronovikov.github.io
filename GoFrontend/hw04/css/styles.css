@@ -1,0 +1,140 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat-x;
+    font-family: Tahoma;
+    padding-top: 38px;
+}
+
+.container {
+    background: #fff;
+    border-bottom: 3px solid #031d28;
+    /*box-shadow: 0 0 3px 3px #084d6a;*/
+    margin: 0 auto;
+    padding-top: 11px;
+    position: relative;
+    width: 1000px;
+}
+
+/********************************************************************
+*  Logo, Adress and Large picture
+********************************************************************/
+.logo {
+    height: 164px;
+    margin-left: 28px;
+}
+
+.large_image {
+    background-image: url("../img/thebeach.jpg");
+    height: 237px;
+}
+
+/********************************************************************
+*  Horisontal Menu
+********************************************************************/
+.h_menu {
+    background-color: #333333;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #cacbcb;
+    height: 28px;
+}
+
+.h_menu  li,
+.h_menu  li a {
+    color: #fff;
+    /*float: left;*/
+    display: inline-block;
+    font-size: 11pt;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 9px;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.h_menu li ul li {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.h_menu li ul li a {
+    margin: 0px 0px;
+}
+
+.h_menu li ul {
+    background-color: #333333;
+    display: none; /* скрываем выпадающе меню */
+    left: 0;
+    position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
+    top: 29px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+    width: 150px;
+    z-index: 1;
+}
+
+.h_menu  li  a:hover {
+    background-color: #505050;
+}
+
+.h_menu li:hover ul {
+    display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+}
+
+
+/********************************************************************
+*  Main area
+********************************************************************/
+
+.news_wr {
+    background: #edeef0;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.main_wr {
+    background: #fff;
+    float: left;
+    position: relative;
+    right: 21%;
+    width: 100%;
+}
+
+.info_wr {
+    background: #edeef0;
+    float: left;
+    position: relative;
+    right: 58%;
+    width: 100%;
+}
+
+.info_col {
+    float: left;
+    left: 79%;
+    position: relative;
+    width: 21%;
+}
+
+.main_col {
+    float: left;
+    left: 79%;
+    position: relative;
+    width: 58%;
+}
+
+.news_col {
+    float: left;
+    left: 79%;
+    position: relative;
+    width: 21%;
+}
+
+/********************************************************************
+*  Copyright in the bottom of the page
+********************************************************************/
+.copyright {
+    color: #fff;
+    font-size: 12pt;
+    line-height: 31px;
+    text-align: center;
+}
