@@ -31,13 +31,13 @@
     margin-bottom: 40px;
 }
 
-.top_menu_item {
+.top_menu li {
     display: inline-block;
     height: 40px;
     margin-right: 40px;
 }
 
-.top_menu_link {
+.top_menu li a {
     color: #fff;
     display: block;
     font-size: 11pt;
@@ -48,7 +48,7 @@
     text-shadow: 2px 2px #444444;
 }
 
-a:hover.top_menu_link {
+.top_menu li a:hover {
     background: #424242;
     border-color: #838383;
     border-style: solid;
@@ -67,7 +67,7 @@ a:hover.top_menu_link {
     width: 240px;
 }
 
-.side_menu_item {
+.side_menu td {
     border: 1px solid #c8c8c8;
     border-collapse: collapse;
     background: #fff;
@@ -75,7 +75,7 @@ a:hover.top_menu_link {
     width: 238px;
 }
 
-.side_menu_link {
+.side_menu td a {
     color: #656363;
     display: block;
     font-size: 10pt;
@@ -85,7 +85,7 @@ a:hover.top_menu_link {
     text-decoration: none;
 }
 
-a:hover.side_menu_link {
+.side_menu td a:hover {
     background: #f9f9f9;
     color: #2c2c2c;
     padding-left: 32px;
@@ -133,19 +133,19 @@ a:hover.side_menu_link {
     height: 40px;
 }
 
-.bottom_menu_item {
+.bottom_menu li {
     display: inline-block;
     height: 40px;
     margin-right: 40px;
 }
 
-.bottom_menu_copy {
+.bottom_menu li:last-child {
     display: inline-block;
     font-size: 10pt;
     margin-left: 228px;
 }
 
-.bottom_menu_link {
+.bottom_menu li a {
     color: #2c2c2c;
     display: block;
     font-size: 10pt;
@@ -155,6 +155,6 @@ a:hover.side_menu_link {
     text-decoration: none;
 }
 
-a:hover.bottom_menu_link {
+.bottom_menu li a:hover {
     text-decoration: underline;
 }
