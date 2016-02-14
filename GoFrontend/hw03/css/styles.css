@@ -63,7 +63,6 @@
 .side_menu {
     border-collapse: collapse;
     float: left;
-    margin-right: 46px;
     width: 240px;
 }
 
@@ -97,7 +96,7 @@
 .item {
     color: #2c2c2c;
     width: 678px;
-    float: left;
+    float: right;
 }
 
 .item_img_div {
@@ -129,7 +128,7 @@
 ********************************************************************/
 .bottom_menu {
     background: #e1e1e1;
-    clear: left;
+    clear: both;
     height: 40px;
 }
 
