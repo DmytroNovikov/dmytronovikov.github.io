@@ -32,7 +32,7 @@ a:hover.gofrontend {
     width: 50%;
 }
 
-.g_table_header {
+.g_table tr th {
     border: 1px solid #fff;
     border-collapse: collapse;
     font-weight: bold;
@@ -40,14 +40,14 @@ a:hover.gofrontend {
     text-align: center;
 }
 
-.g_table_theme {
+.g_table tr td:first-child {
     border: 1px solid #fff;
     border-collapse: collapse;
     text-align: left;
     padding: 3px 3px;
 }
 
-.g_table_grade {
+.g_table tr td:last-child {
     border: 1px solid #fff;
     border-collapse: collapse;
     text-align: center;
@@ -55,8 +55,8 @@ a:hover.gofrontend {
     padding: 3px 3px;
 }
 
-a:visited.link_to_hw,
-.link_to_hw {
+.g_table tr td a,
+.g_table tr td a:visited {
     color: #fff;
     display: block;
     font-style: italic;
