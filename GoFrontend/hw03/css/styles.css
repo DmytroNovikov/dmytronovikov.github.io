@@ -61,20 +61,28 @@
         SIDE MENU
 ********************************************************************/
 .side_menu {
-    border-collapse: collapse;
+    background: #fff;
     float: left;
     width: 240px;
 }
 
-.side_menu td {
+.side_menu ul {
+    list-style-type: none;
+}
+
+.side_menu li {
     border: 1px solid #c8c8c8;
-    border-collapse: collapse;
-    background: #fff;
-    height: 38px;
+    border-bottom: 0px;
+    height: 39px;
+    text-decoration: none;
     width: 238px;
 }
 
-.side_menu td a {
+.side_menu li:last-child {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.side_menu li a {
     color: #656363;
     display: block;
     font-size: 10pt;
@@ -84,7 +92,7 @@
     text-decoration: none;
 }
 
-.side_menu td a:hover {
+.side_menu li a:hover {
     background: #f9f9f9;
     color: #2c2c2c;
     padding-left: 32px;
