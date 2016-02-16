@@ -19,16 +19,50 @@ body {
 /********************************************************************
 *  Logo, Adress and Large picture
 ********************************************************************/
+.company {
+    position: relative;
+}
+
 .logo {
+    display: block;
     height: 164px;
     margin-left: 28px;
 }
 
-/* Наши контакты №5fa5bb 12pt */
+/* Наши контакты*/
+.contacts {
+    position: absolute;
+    color: #5fa5bb;
+    font-size: 11pt;
+    line-height: 12pt;
+    top: 6px;
+    right: 32px;
+}
+
+.contacts::first-line {
+    font-weight: bold;
+    line-height: 16pt;
+}
 
 .large_image {
     background-image: url("../img/thebeach.jpg");
     height: 237px;
+}
+
+.flags_board {
+    position: absolute;
+    bottom: 6px;
+    right: 32px;
+}
+
+a.flag {
+    color: #018ea9;
+    display: inline-block;
+    font-size: 11px;
+    height: 56px;
+    text-align: center;
+    text-decoration: underline;
+    width: 56px;
 }
 
 /********************************************************************
@@ -41,13 +75,16 @@ body {
     height: 28px;
 }
 
-.h_menu  li,
-.h_menu  li a {
+/*
+*   Horizontal menu
+*/
+.h_menu > li,
+.h_menu  a
+ {
     color: #fff;
-    /*float: left;*/
-    display: inline-block;
-    font-size: 11pt;
+    display: inline-block;;
     height: 28px;
+    font-size: 11pt;
     line-height: 28px;
     margin: 0 9px;
     padding: 0 10px;
@@ -55,31 +92,28 @@ body {
     text-decoration: none;
 }
 
-.h_menu li ul li {
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
-
-.h_menu li ul li a {
-    margin: 0px 0px;
-}
-
-.h_menu li ul {
+/*
+*   Popup menu
+*/
+.h_menu > li > ul
+ {
     background-color: #333333;
-    display: none; /* скрываем выпадающе меню */
+    display: none;
     left: 0;
-    position: absolute; /* чтобы положение подменю не влияло на окружение и легко было позиционировать */
-    top: 29px; /* высоту лучше не делать большей высоты пункта меню первого уровня, иначе попасть на подменю будет проблематично */
+    position: absolute;
+    top: 29px;
     width: 150px;
     z-index: 1;
 }
 
-.h_menu  li  a:hover {
-    background-color: #505050;
+.h_menu  li > ul a
+ {
+    margin: 0;
+    padding: 1px 10px;
 }
 
-.h_menu li:hover ul {
-    display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+.h_menu > li:hover > ul {
+    display: block;
 }
 
 /********************************************************************
