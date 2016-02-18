@@ -33,15 +33,15 @@ body {
 .contacts {
     position: absolute;
     color: #5fa5bb;
-    font-size: 11pt;
-    line-height: 12pt;
-    top: 6px;
-    right: 32px;
+    font-size: 12px;
+    line-height: 18px;
+    top: -5px;
+    right: 34px;
 }
 
 .contacts::first-line {
-    font-weight: bold;
-    line-height: 16pt;
+    font-weight: bolder;
+    line-height: 20px;
 }
 
 .large_image {
@@ -51,14 +51,14 @@ body {
 
 .flags_board {
     position: absolute;
-    bottom: 6px;
-    right: 32px;
+    bottom: 8px;
+    right: 29px;
 }
 
 a.flag {
     color: #018ea9;
     display: inline-block;
-    font-size: 11px;
+    font-size: 10px;
     height: 56px;
     text-align: center;
     text-decoration: underline;
@@ -85,13 +85,12 @@ a.flag {
     color: #fff;
     display: inline-block;;
     height: 28px;
-    font-size: 11pt;
+    font-size: 14px;
     line-height: 28px;
     margin: 0 9px;
     padding: 0 10px;
     position: relative;
     text-decoration: none;
-    /*vertical-align: middle;*/
 }
 
 /*
@@ -119,6 +118,12 @@ a.flag {
     display: block;
 }
 
+.h_menu li:hover,
+.h_menu a:hover {
+    color: #5fa5bb;
+    text-decoration: underline;
+}
+
 .arrow {
     display: block;
     float: right;
@@ -131,7 +136,7 @@ a.flag {
     margin-top: 5px;
     overflow: hidden;
     width: 100%;
-    font-size: 11pt;
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -140,7 +145,7 @@ a.flag {
     border-right: 1px solid #c7cacf;
     float: left;
     margin-bottom: -33333px;
-    padding: 10px 15px;
+    padding: 3px 15px;
     padding-bottom: 33333px;
     width: 179px;
 }
@@ -149,7 +154,7 @@ a.flag {
     background: #fff;
     float: left;
     margin-bottom: -33333px;
-    padding: 10px 15px;
+    padding: 3px 15px;
     padding-bottom: 33333px;
     width: 550px;
 }
@@ -159,74 +164,19 @@ a.flag {
     border-left: 1px solid #c7cacf;
     float: left;
     margin-bottom: -33333px;
-    padding: 10px 15px;
+    padding: 3px 15px;
     padding-bottom: 33333px;
     width: 179px;
 }
 
 .title_col {
     color: #424c43;
-    font-size: 13pt;
+    font-size: 18px;
     font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 6px;
     text-align: center;
 }
-
-/*
-*
-* Wrapping blocks technic.
-*
-.news_wr {
-    background: #edeef0;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    width: 1000px;
-}
-
-.main_wr {
-    background: #fff;
-    float: left;
-    position: relative;
-    right: 210px;
-    width: 1000px;
-}
-
-.info_wr {
-    background: #edeef0;
-    float: left;
-    position: relative;
-    right: 580px;
-    width: 1000px;
-}
-
-.info_col {
-    float: left;
-    left: 790px;
-    position: relative;
-    width: 208px;
-    border-left: 1px solid #c7cacf;
-    border-right: 1px solid #c7cacf;
-}
-
-.main_col {
-    float: left;
-    left: 790px;
-    position: relative;
-    width: 580px;
-}
-
-.news_col {
-    float: left;
-    left: 790px;
-    position: relative;
-    width: 210px;
-}
-
-.text_block {
-    font-size: 11pt;
-    line-height: 24px;
-    padding: 15px 15px;
-}*/
 
 /********************************************************************
 *  Copyright in the bottom of the page
@@ -234,7 +184,7 @@ a.flag {
 .copy_right {
     color: #fff;
     clear: both;
-    font-size: 11pt;
+    font-size: 12px;
     line-height: 31px;
     text-align: center;
 }
