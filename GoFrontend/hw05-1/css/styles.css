@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(#d3e4eb, #31301e);
+}
+
+.container {
+    height: 1064px;
+    font-family: Tahoma, sans-serif;
+    margin: 0 auto;
+    width: 1215px;
+}
+
+/********************************************************************
+*  Horisontal Menu
+********************************************************************/
+header {
+    /*background-color: #074f8f;*/
+    /*background-color: #074c89;*/
+    background: url("../img/line.jpg");
+    height: 36px;
+}
+
+.top_menu {
+    float: right;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.top_menu li {
+    float: left;
+}
+
+.top_menu li > a {
+    color: #60b5ed;
+    display: block;
+    line-height: 36px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.top_menu li > a:hover {
+    color: #fff;
+    background-color: #4eabda;
+}
+
+/* Some features for the last 2 items of the top horizontal menu */
+
+.top_menu li:nth-last-child(2) {
+    margin-left: 45px;
+}
+
+.top_menu li:nth-last-child(2) > a,
+.top_menu li:last-child,
+.top_menu li:last-child > a {
+    color: #fff;
+    line-height: 35px;
+    padding: 0 15px;
+}
+
+.top_menu li:last-child > a {
+    display: inline;
+    padding: 0 0px;
+    text-decoration: underline;
+}
+
+.top_menu li:last-child:hover,
+.top_menu li:nth-last-child(2) > a:hover {
+    background: linear-gradient(#64a8e3, #2e7ac4);
+    border: solid 1px #4b9dd6;
+    border-top: 0px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 0 14px;
+}
+
+.top_menu li:last-child > a:hover {
+    background-color: inherit;
+    color: #074c89;
+}
+
+/********************************************************************
+*  Main Block
+********************************************************************/
+.background {
+    background: url("../img/background.jpg");
+    background-size: cover;
+    height: 1028px;
+}
