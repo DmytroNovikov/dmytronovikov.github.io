@@ -124,13 +124,28 @@ header {
     text-align: center;
 }
 
+/*     Login via facebook account     */
+.form > a {
+    display: block;
+    margin-left: 141px;
+    margin-top: 36px;
+}
+
+.form > a:hover {
+    opacity: .65;
+}
+
+/*     ----- OU -----     */
+
+/*     Input fields     */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     background-color: #000;
     border: none;
     border-bottom: 1px solid #494a49;
-    color: #0f0e0e;
+    /*color: #0f0e0e;*/
+    color: #fff;
     display: block;
     height: 35px;
     margin-bottom: 16px;
@@ -147,10 +162,38 @@ input[type="password"]:focus {
     box-shadow: 0px 0px 8px 3px #4e89b1;
 }
 
-.agreement {
+/*     Send updates     */
+form > div > label {
+    color: #c5c5c5;
+    font-size: 12px;
+}
+
+form > div {
+    margin: 20px 142px 22px 142px;
+}
+
+/*     "Create" button     */
+.create_butt {
+    background: linear-gradient(#64a8e3, #2e7ac4);
+    border: 1px solid #54a1db;
+    border-radius: 2px;
     color: #fff;
+    display: block;
+    height: 36px;
+    margin-left: 205px;
+    width: 151px;
+}
+
+.create_butt:hover {
+    opacity: .8;
+}
+
+/*     Terms of Service agreement     */
+.agreement {
+    color: #c5c5c5;
+    /*color: #fff;*/
     font-size: 11px;
     line-height: 16px;
     text-align: center;
-    margin: 0px 122px;
+    margin: 18px 122px 0px 122px;
 }
