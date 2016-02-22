@@ -120,13 +120,8 @@ a.flag {
 
 .h_menu li:hover,
 .h_menu a:hover {
-    color: #5fa5bb;
-    text-decoration: underline;
-}
-
-.arrow {
-    display: block;
-    float: right;
+    color: #000;
+    background-color: #787878;
 }
 
 /********************************************************************
