@@ -16,7 +16,7 @@ body {
 
 .container {
     height: 1064px;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Tahoma, Arial, sans-serif;
     margin: 0 auto;
     width: 1215px;
     position: relative;
