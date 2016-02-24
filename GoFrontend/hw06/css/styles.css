@@ -1,0 +1,14 @@
+.cover {
+    display: block;
+    margin-top: 54px;
+    text-align: center;
+}
+
+menu {
+    background: linear-gradient(#4d5663, #010101);
+    border: solid 1px #2c345a;
+    border-radius: 4px;
+    height: 34px;
+    margin: 5px auto;
+    width: 910px;
+}
