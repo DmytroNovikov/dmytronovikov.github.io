@@ -5,10 +5,12 @@
 }
 
 menu {
-    background: linear-gradient(#4d5663, #010101);
+    /*background: linear-gradient(#4d5663, #010101);*/
+    background-image: url("../img/menu_background.png");
+    background-repeat: repeat-x;
     border: solid 1px #2c345a;
     border-radius: 4px;
-    height: 34px;
+    height: 33px;
     margin: 5px auto;
     width: 910px;
 }
