@@ -1,6 +1,73 @@
+@font-face {
+    font-family: 'Lucida Sans Unicoderegular';
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot');
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.ttf') format('truetype'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.svg#lucida_sans_unicoderegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
+}
+
+/*
+*    Header
+*/
+.top_line {
+    height: 54px;
+    margin: 0px auto;
+    position: relative;;
+    width: 908px;
+}
+
+.phones {
+    display: block;
+    /*float: left;*/
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: bold;
+
+    padding-top: 7px;
+    padding-left: 6px;
+}
+
+.login {
+    background: linear-gradient(#1f6787, #0c3357);
+    border-top: 1px solid #a6c3cf;
+    border-left: 1px solid #d4dee4;
+    border-bottom: 1px solid #596d80;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 3px #596d80;
+    height: 25px;
+    left: 312px;
+    position: absolute;
+    top: 16px;
+    width: 495px;
+}
+
+.links {
+    border: 1px solid #c1c8cb;
+    border-radius: 10px;
+    height: 19px;
+    /*box-shadow: 0px 0px 8px 3px #4e89b1;*/
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    width: 75px;
+}
+
+.links img {
+    float: left;
+    display: block;
+}
+
 .cover {
     display: block;
-    margin-top: 54px;
+    /*margin-top: 54px;*/
     text-align: center;
 }
 
