@@ -11,44 +11,64 @@
 }
 
 html {
+    /*background-color: #0f0;*/
+}
+
+/*
+*    The main container
+*/
+.container {
+    background-color: #fff;
     font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
+    /*height: 1310px;*/
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
 }
 
 /*
 *    Header
 */
-.top_line {
-    height: 54px;
-    margin: 0px auto;
-    position: relative;;
-    width: 908px;
-}
 
+/*    Phone numbers    */
 .phones {
-    display: block;
-    /*float: left;*/
     font-family: 'Arial';
     font-size: 18px;
-    font-weight: bold;
-
-    padding-top: 7px;
-    padding-left: 6px;
+    height: 21px;
+    left: 52px;
+    line-height: 21px;
+    position: absolute;
+    top: 22px;
 }
 
+.phones > img {
+    display: block;
+    float: left;
+}
+
+.phones > div {
+    float: left;
+    height: 21px;
+    margin-left: 5px;
+}
+
+/*    Login / Register    */
 .login {
     background: linear-gradient(#1f6787, #0c3357);
+    /*background-color: #dd0000;*/
     border-top: 1px solid #a6c3cf;
     border-left: 1px solid #d4dee4;
     border-bottom: 1px solid #596d80;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px 3px #596d80;
+    /*box-shadow: 0px 0px 8px 3px #596d80;*/
     height: 25px;
-    left: 312px;
+    left: 358px;
     position: absolute;
     top: 16px;
     width: 495px;
 }
 
+/*    Home Site map E-mail links    */
 .links {
     border: 1px solid #c1c8cb;
     border-radius: 10px;
@@ -56,21 +76,20 @@ html {
     /*box-shadow: 0px 0px 8px 3px #4e89b1;*/
     position: absolute;
     top: 19px;
-    right: 7px;
+    left: 871px;
     width: 75px;
 }
 
-.links img {
-    float: left;
+/*    Banner    */
+.banner {
     display: block;
-}
-
-.cover {
-    display: block;
-    /*margin-top: 54px;*/
+    left: 45px;
+    position: absolute;
     text-align: center;
+    top: 54px;
 }
 
+/*    Menu    */
 menu {
     /*background: linear-gradient(#4d5663, #010101);*/
     background-image: url("../img/menu_background.png");
@@ -78,6 +97,24 @@ menu {
     border: solid 1px #2c345a;
     border-radius: 4px;
     height: 33px;
-    margin: 5px auto;
+    left: 44px;
+    position: absolute;
+    top: 297px;
     width: 910px;
+}
+
+/*---------------------------------------------------------------------*/
+.top_line {
+    height: 54px;
+    margin: 0px auto;
+    position: relative;;
+    width: 908px;
+}
+
+
+
+
+.links img {
+    float: left;
+    display: block;
 }
