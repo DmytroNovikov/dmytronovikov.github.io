@@ -250,14 +250,82 @@ menu.top {
 
 .items {
   border-radius: 3px;
-  background-image: linear-gradient(#e5e7e8, #93a7b0);
+  background-image: linear-gradient(#e4e7e8, #93a7b0);
   float: left;
-  /*height: 628px;*/
   margin-top: 2px;
   margin-bottom: -11111px;
   padding-bottom: 11111px;
+  padding-top: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
   position: relative;
-  width: 527px;
+  width: 501px;
+}
+
+.item_box {
+    float: left;
+    height: 203px;
+    width: 167px;
+    position: relative;
+}
+
+.item_box_img {
+    background: #fff;
+    border: solid 1px #bfc6c8;
+    border-radius: 10px;
+    height: 128px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    top: 34px;
+    width: 137px;
+}
+
+.item_helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.item_img {
+    vertical-align: middle;
+}
+
+.item_brand {
+    color: rgb(32, 105, 136);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 100%;
+}
+
+.item_model {
+    color: #1f2528;
+    font-size: 13px;
+    position: absolute;
+    text-align: center;
+    top: 21px;
+    width: 100%;
+}
+
+.item_price {
+    color: rgb(17, 65, 101);
+    font-family: "Arial";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 165px;
+    width: 100%;
+}
+
+.item_addon {
+    float: left;
+    height: 9px;
+    width: 501px;
 }
 
 /******************************************************************************
