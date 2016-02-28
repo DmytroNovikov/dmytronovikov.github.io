@@ -570,6 +570,44 @@ menu.top {
     width: 1000px;
 }
 
+.brand_0 {
+    position: absolute;
+    top:42px;
+}
+
+.brand_1 {
+    left: 162px;
+}
+
+.brand_2 {
+    left: 257px;
+}
+
+.brand_3 {
+    left: 367px;
+}
+
+.brand_4 {
+    left: 459px;
+}
+
+.brand_5 {
+    left: 530px;
+}
+
+.brand_6 {
+    left: 620px;
+    top: 38px;
+}
+
+.brand_7 {
+    left: 690px;
+}
+
+.brand_8 {
+    left: 766px;
+}
+
 .brands_logo_icons {
     position: absolute;
     left: 163px;
