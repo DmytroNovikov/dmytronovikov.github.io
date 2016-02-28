@@ -103,6 +103,53 @@ menu.top {
     width: 908px;
 }
 
+.top_menu {
+    position: absolute;
+    top: 3px;
+}
+
+.top_menu li {
+    display: inline-block;
+    position: absolute;
+}
+
+.top_menu li a {
+    border-radius: 10px;
+    color: #b1bcc0;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 10px 3px 10px;
+}
+
+.top_menu li a:hover {
+    background-image: linear-gradient(rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+    color: #fff;
+}
+
+.cart {
+    color: #929b9f;
+    position: absolute;
+    font-family: 'Arial';
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    left: 682px;
+    top: 6px;
+}
+
+ .cart_info {
+     position: absolute;
+     top: -4px;
+     left: 28px;
+ }
+
+ .cart_marked {
+     color: #0d5a8f;
+ }
 /******************************************************************************
 *    Filters
 ******************************************************************************/
@@ -427,7 +474,26 @@ menu.top {
     background-color: #fff;
     height: 90px;
     margin: 0 auto;
+    position: relative;
     width: 1000px;
+}
+
+.brands_logo_icons {
+    position: absolute;
+    left: 163px;
+    top: 31px;
+    height: 27px;
+}
+
+.brands_logo_icons li {
+    display: inline-block;
+    padding: 2px 2px;
+    line-height: 27px;
+}
+
+.brands_logo_icons li:hover {
+    padding: 2px 2px 0px 2px;
+    border-bottom: 2px solid #000;
 }
 
 /******************************************************************************
