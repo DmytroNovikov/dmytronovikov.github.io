@@ -10,15 +10,6 @@
     font-style: normal;
 }
 
-/*    The main container    */
-/*.container {
-    background-color: #fff;
-    font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
-    margin: 0 auto;
-    position: relative;
-    width: 1000px;
-}*/
-
 /******************************************************************************
 *    Header
 ******************************************************************************/
@@ -212,6 +203,7 @@ menu.top {
      border-radius: 12px;
      display: block;
      float: left;
+     letter-spacing: 1px;
      line-height: 26px;
      margin-left: 2px;
      margin-top: -4px;
@@ -279,50 +271,77 @@ menu.top {
     line-height: 26px;
     margin-bottom: -11111px;
     padding-bottom: 11111px;
-    padding-left: 9px;
-    padding-top: 4px;
     position: relative;
     width: 228px;
 }
 
 .brand_menu_caption {
+    top: 4px;
+    left: 9px;
+    margin-bottom: 0px;
+    position: absolute;
     width: 180px;
 }
 
-.brand_catalog_parts {
-    top: 10px;
-    left: 15px;
-    /*margin-top: -4px;
-    margin-left: 15px;*/
-    /* Right margin is set to move the <input>-element to the next line */
-    margin-right: 80px;
+.brand_catalog_parts1 {
+    left: 22px;
+    top: 49px;
+    position: absolute;
     width: 132px;
+}
+
+.brand_catalog_parts2 {
+    left: 21px;
+    top: 163px;
+    position: absolute;
+    width: 134px;
 }
 
 .brand_selection {
     font-size: 12px;
     letter-spacing: 1px;
-    margin-left: 19px;
-    line-height: 25px;
+    position: absolute;
 }
 
-/*.brand_selection li {
-    height: 25px;
-}*/
-
-.brand_selection1 label {
+.brand_selection label {
     display: block;
     padding-left: 17px;
     text-indent: -15px;
     line-height: 25px;
 }
 
-.brand_selection1 input[type="checkbox"] {
+.brand_selection input[type="checkbox"] {
     width: 10px;
     height: 10px;
     vertical-align: baseline;
-    /*position: relative;*/
-    top: 1px;
+}
+
+.brand_selection1 {
+    left: 28px;
+    top: 76px;
+}
+
+.brand_selection2 {
+    left: 28px;
+    top: 192px;
+}
+
+.sbutton {
+    background-image: linear-gradient(#1f6787, #0c3357);
+    border: 1px solid #7a95a1;
+    border-radius: 12px;
+    box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+    color: #e5e9ea;
+    font-size: 12px;
+    height: 26px;
+    left: 33px;
+    position: absolute;
+    top: 281px;
+    width: 80px;
+}
+
+.sbutton:hover {
+    background-image: linear-gradient(#63b9df, #065a80);
 }
 
 /******************************************************************************
