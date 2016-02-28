@@ -434,15 +434,38 @@ menu.top {
 *    Footer
 ******************************************************************************/
 footer {
-    border: 1px solid rgb(36, 42, 60);
+    border: 1px solid #242c3e;
     background-color: #213a4d;
     height: 104px;
     margin: 0 auto;
-    width: 912px;
+    position: relative;
+    width: 907px;
 }
 
-/*---------------------------------------------------------------------*/
-.links img {
-    /*float: left;*/
-    display: block;
+.footer_links {
+    position: absolute;
+    top: 11px;
+}
+
+.footer_links li,
+.footer_links li a {
+    color: #bec6c9;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 12px;
+    position: absolute;
+    text-decoration: none;
+}
+
+.footer_links li a:hover {
+    color: #52abcb;
+}
+
+.footer_copy {
+    color: #7f4740;
+    font-family: Arial;
+    font-size: 10px;
+    position: absolute;
+    top: 39px;
+    left: 376px;
 }
