@@ -10,33 +10,39 @@
     font-style: normal;
 }
 
-html {
-    /*background-color: #0f0;*/
-}
-
-/*
-*    The main container
-*/
-.container {
+/*    The main container    */
+/*.container {
     background-color: #fff;
     font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
-    /*height: 1310px;*/
     margin: 0 auto;
     position: relative;
     width: 1000px;
+}*/
+
+/******************************************************************************
+*    Header
+******************************************************************************/
+header {
+    background-color: #fff;
+    font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
+    margin: 0 auto;
+    width: 1000px;
 }
 
-/*
-*    Header
-*/
+.header_container {
+    height: 340px;
+    position: relative;
+    width: 100%;
+}
 
 /*    Phone numbers    */
 .phones {
+    color: #5e696d;
     font-family: 'Arial';
     font-size: 18px;
-    height: 21px;
+    height: 22px;
     left: 52px;
-    line-height: 21px;
+    line-height: 22px;
     position: absolute;
     top: 22px;
 }
@@ -48,32 +54,36 @@ html {
 
 .phones > div {
     float: left;
-    height: 21px;
-    margin-left: 5px;
+    height: 22px;
+    margin-left: 4px;
+}
+
+.ls0 {
+    letter-spacing: 0px;
+}
+
+.ls1 {
+    letter-spacing: 1px;
 }
 
 /*    Login / Register    */
 .login {
-    background: linear-gradient(#1f6787, #0c3357);
-    /*background-color: #dd0000;*/
-    border-top: 1px solid #a6c3cf;
-    border-left: 1px solid #d4dee4;
-    border-bottom: 1px solid #596d80;
-    border-radius: 5px;
-    /*box-shadow: 0px 0px 8px 3px #596d80;*/
-    height: 25px;
-    left: 358px;
-    position: absolute;
-    top: 16px;
-    width: 495px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  position: absolute;
+  left: 358px;
+  top: 17px;
+  width: 496px;
+  height: 27px;
 }
 
-/*    Home Site map E-mail links    */
+/*    Home / Site map / E-mail links    */
 .links {
-    border: 1px solid #c1c8cb;
+    border: 1px solid rgb(189, 196, 199);
     border-radius: 10px;
+    box-shadow: 0px 1px 1px 0px rgba(150, 150, 150, 0.75);
     height: 19px;
-    /*box-shadow: 0px 0px 8px 3px #4e89b1;*/
     position: absolute;
     top: 19px;
     left: 871px;
@@ -90,31 +100,254 @@ html {
 }
 
 /*    Menu    */
-menu {
-    /*background: linear-gradient(#4d5663, #010101);*/
-    background-image: url("../img/menu_background.png");
-    background-repeat: repeat-x;
-    border: solid 1px #2c345a;
+menu.top {
+    background-image: linear-gradient(rgb(87,96,104) 0%,  rgb(44,48,52) 13%, rgb(0,0,0) 100%);
+    border: solid 1px rgb(13, 22, 66);
     border-radius: 4px;
-    height: 33px;
-    left: 44px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 31px;
+    left: 45px;
     position: absolute;
-    top: 297px;
-    width: 910px;
-}
-
-/*---------------------------------------------------------------------*/
-.top_line {
-    height: 54px;
-    margin: 0px auto;
-    position: relative;;
+    top: 298px;
     width: 908px;
 }
 
+/******************************************************************************
+*    Filters
+******************************************************************************/
+.filters {
+    background-color: #fff;
+    font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
 
+.filter {
+    background-color: #fff;
+    border: solid 1px rgb(156, 156, 157);
+    box-shadow: 0px 5px 5px 0px rgba(150, 150, 150, 0.75);
+    position: absolute;
+}
 
+.filter_auto {
+    border-radius: 17px;
+    height: 132px;
+    left: 50px;
+    top: 3px;
+    width: 412px;
+}
 
-.links img {
+.filter_tyres {
+    border-radius: 18px;
+    height: 134px;
+    left: 479px;
+    top: 2px;
+    width: 190px;
+}
+
+.filter_disk {
+  border-radius: 16px;
+  left: 681px;
+  top: 2px;
+  width: 266px;
+  height: 133px;
+}
+
+/******************************************************************************
+*    Columns
+******************************************************************************/
+.columns_container {
+    background-color: #fff;
+    font-family: 'Lucida Sans Unicoderegular', Tahoma, sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************************************************************************
+*    Catalog Menu
+******************************************************************************/
+
+.catalog {
+    color: #114165;
     float: left;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: -11111px;
+    padding-bottom: 11111px;
+    padding-left: 44px;
+    padding-top: 6px;
+    position: relative;
+    width: 192px;
+}
+
+.menu_caption {
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 12px;
+    box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+    height: 25px;
+    margin-bottom: 17px;
+    width: 181px;
+}
+
+.menu_caption img {
+    display: block;
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-top: 1px;
+}
+
+.catalog_parts {
+     border: 1px solid #79878d;
+     border-radius: 12px;
+     display: block;
+     float: left;
+     line-height: 26px;
+     margin-left: 2px;
+     margin-top: -4px;
+     /* Right margin is set to move the <li>-element to the next line */
+     margin-right: 30px;
+     width: 148px;
+ }
+
+.catalog_parts img {
+    display: block;
+    float: left;
+    margin-left: 4px;
+    margin-right: 2px;
+    padding-top: 1px;
+}
+
+.catalog_items {
+    /*list-style: circle inside;
+    margin-left: 32px;*/
+    list-style-type: none;
+    line-height: 26px;
+    list-style: circle inside url("../img/m_scircle.png");
+    margin-left: 33px;
+}
+
+.catalog_items a {
+     display: block;
+     color: #465961;
+     font-size: 12px;
+     letter-spacing: 1px;
+     text-decoration: none;
+ }
+
+.catalog_items a:hover {
+     color: #114165;
+     font-style: italic;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+/******************************************************************************
+*    Items Area
+******************************************************************************/
+
+.items {
+  border-radius: 3px;
+  background-image: linear-gradient(#e5e7e8, #93a7b0);
+  float: left;
+  /*height: 628px;*/
+  margin-top: 2px;
+  margin-bottom: -11111px;
+  padding-bottom: 11111px;
+  position: relative;
+  width: 527px;
+}
+
+/******************************************************************************
+*    Brands Menu
+******************************************************************************/
+
+.brands {
+    color: #114165;
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: -11111px;
+    padding-bottom: 11111px;
+    padding-left: 9px;
+    padding-top: 4px;
+    position: relative;
+    width: 228px;
+}
+
+.brand_menu_caption {
+    width: 180px;
+}
+
+.brand_catalog_parts {
+    top: 10px;
+    left: 15px;
+    /*margin-top: -4px;
+    margin-left: 15px;*/
+    /* Right margin is set to move the <input>-element to the next line */
+    margin-right: 80px;
+    width: 132px;
+}
+
+.brand_selection {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 19px;
+    line-height: 25px;
+}
+
+/*.brand_selection li {
+    height: 25px;
+}*/
+
+.brand_selection1 label {
+    display: block;
+    padding-left: 17px;
+    text-indent: -15px;
+    line-height: 25px;
+}
+
+.brand_selection1 input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    vertical-align: baseline;
+    /*position: relative;*/
+    top: 1px;
+}
+
+/******************************************************************************
+*    Brands Logos
+******************************************************************************/
+.brands_logo {
+    background-color: #fff;
+    height: 90px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/******************************************************************************
+*    Footer
+******************************************************************************/
+footer {
+    border: 1px solid rgb(36, 42, 60);
+    background-color: #213a4d;
+    height: 104px;
+    margin: 0 auto;
+    width: 912px;
+}
+
+/*---------------------------------------------------------------------*/
+.links img {
+    /*float: left;*/
     display: block;
 }

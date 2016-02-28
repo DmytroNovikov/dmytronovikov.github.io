@@ -7,33 +7,113 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="container">
-            <header>
+        <header>
+            <div class="header_container">
+                <!-- *    Phone numbers    * -->
                 <div class="phones">
                     <img src="img/phone.png" alt="Phone" />
                     <div>
-                        (044)12<span style="letter-spacing: 1px;">3-</span>4<span style="letter-spacing: 1px;">5-</span>67
-                        <span style="letter-spacing: 1px;">(</span>044<span style="letter-spacing: 1px;">)</span>56<span style="letter-spacing: 1px;">7-</span>8<span style="letter-spacing: 1px;">9-</span>10
+                        <span class="ls1">(<span class="ls0">044)1</span>23-<span class="ls0">45-</span>67<span class="ls0"> (0</span>44)<span class="ls0">567-</span>89-<span class="ls0">10</span></span>
                     </div>
                 </div>
+                <!-- *    Login / Register    * -->
                 <form class="login" action="index.html" method="post">
                     <!-- <input type="text" name="login" value="" placeholder="логин">
                     <input type="password" name="pwd" value="пароль">
                     вход | регистрация забыли пароль? -->
                 </form>
+                <!-- *    Home / Site map / E-mail links    * -->
                 <div class="links">
                     <!-- <a href="index.html"><img src="img/navi_home.png" alt="Home" /></a>
                     <a href="#"><img src="img/navi_map.png" alt="Site map" /></a>
                     <a href="#"><img src="img/navi_env.png" alt="E-mail" /></a> -->
                 </div>
+                <!-- *    Banner    * -->
+                <!-- TO DO: Link to the home page -->
                 <a class="banner" href="index.html"><img src="img/banner.png" alt="Banner Image" /></a>
-                <menu>
+                <!-- *    Menu    * -->
+                <menu class="top">
                     &nbsp;
                 </menu>
-            </header>
-            <footer>
-                <!-- width 910px -->
-            </footer>
+            </div>
+        </header>
+        <!--*    Filters    *-->
+        <div class="filters">
+            <div class=" filter filter_auto">
+                &nbsp;
+            </div>
+            <div class="filter filter_tyres">
+                &nbsp;
+            </div>
+            <div class="filter filter_disk">
+                &nbsp;
+            </div>
         </div>
+        <div class="columns_container clearfix">
+            <!-- *    Catalog Menu    * -->
+            <aside class="catalog">
+                <p class="menu_caption"><img src="img/m_page.png" alt="Page"/>КАТАЛОГ ПРОДУКЦИИ:</p>
+                <p class="catalog_parts"><img src="img/m_bcircle.png" alt="Circle"/>ШИНЫ</p>
+                <ul class="catalog_items">
+                    <!-- TO DO: -->
+                    <li><a href="#">Наименование 1</a></li>
+                    <li><a href="#">Наименование 2</a></li>
+                    <li><a href="#">Наименование 3</a></li>
+                    <li><a href="#">Наименование 4</a></li>
+                </ul>
+                <p class="catalog_parts"><img src="img/m_bcircle.png" alt="Circle" style="text-align: center;"/>ДИСКИ</p>
+                <ul class="catalog_items">
+                    <!-- TO DO: -->
+                    <li><a href="#">Наименование 1</a></li>
+                    <li><a href="#">Наименование 2</a></li>
+                    <li><a href="#">Наименование 3</a></li>
+                    <li><a href="#">Наименование 4</a></li>
+                </ul>
+                <p class="catalog_parts"><img src="img/m_bcircle.png" alt="Circle" style="text-align: center;"/>БОЛТЫ</p>
+                <ul class="catalog_items">
+                    <!-- TO DO: -->
+                    <li><a href="#">Наименование 1</a></li>
+                    <li><a href="#">Наименование 2</a></li>
+                    <li><a href="#">Наименование 3</a></li>
+                    <li><a href="#">Наименование 4</a></li>
+                </ul>
+            </aside>
+            <!--*    Items Area    *-->
+            <div class="items">
+            </div>
+            <!-- *    Brands Menu    * -->
+            <menu class="brands">
+                <div class="menu_caption brand_menu_caption"><img src="img/m_page.png" alt="Page"/>БРЕНДЫ:</div>
+                <!-- TO DO: action -->
+                <form class="select_brand" action="index.html" method="post">
+                    <div class="catalog_parts brand_catalog_parts"><img src="img/m_bcircle.png" alt="Circle"/>ШИНЫ</div>
+                    <div class="brand_selection1" style="margin-top: 18px; margin-left: 19px;">
+                        <label><input type="checkbox" id="tbrand1" name="tyrebrand1" value=""> &nbsp;Бренд 1</label>
+                        <label><input type="checkbox" id="tbrand2" name="tyrebrand2" value=""> &nbsp;Бренд 2</label>
+                        <label><input type="checkbox" id="tbrand3" name="tyrebrand3" value=""> &nbsp;Бренд 3</label>
+                    </div>
+                    <p class="catalog_parts brand_catalog_parts"><img src="img/m_bcircle.png" alt="Circle" />ДИСКИ</p>
+                    <ul class="brand_selection">
+                        <li>
+                            <label><input type="checkbox" id="dbrand1" name="diskbrand1" value="">Бренд 1</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id="dbrand2" name="diskbrand2" value="">Бренд 2</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" id="dbrand3" name="diskbrand3" value="">Бренд 3</label>
+                        </li>
+                    </ul>
+                    <input type="submit" name="submit" value="ВЫБРАТЬ">
+                </form>
+            </menu>
+        </div>
+        <div class="brands_logo">
+            &nbsp;
+        </div>
+        <footer>
+            О компании   |   Доставка   |   Статьи   |    Контакты
+            <p> Создание сайта © Global Vision
+        </footer>
     </body>
 </html>
