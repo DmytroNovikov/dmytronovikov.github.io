@@ -665,3 +665,29 @@ footer {
     top: 39px;
     left: 376px;
 }
+
+/******************************************************************************
+*    Circles
+******************************************************************************/
+.outer_circle {
+    border: 1px solid rgb(184, 198, 209);
+    /*background-color: rgb(17, 65, 101);*/
+    background: radial-gradient(circle, rgb(184, 198, 209), rgb(17, 65, 101));
+    border-radius: 50%;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    left: 28px;
+    top: 47px;
+}
+
+.inner_circle {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 10px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+}
