@@ -325,7 +325,7 @@ menu.top {
     border-radius: 12px;
     box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
     height: 25px;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
     width: 181px;
 }
 
@@ -345,19 +345,12 @@ menu.top {
      letter-spacing: 1px;
      line-height: 26px;
      margin-left: 2px;
-     margin-top: -4px;
+     /*margin-top: -4px;*/
      /* Right margin is set to move the <li>-element to the next line */
      margin-right: 30px;
+     position: relative;
      width: 148px;
  }
-
-.catalog_parts img {
-    display: block;
-    float: left;
-    margin-left: 4px;
-    margin-right: 2px;
-    padding-top: 1px;
-}
 
 .catalog_items {
     /*list-style: circle inside;
@@ -366,6 +359,7 @@ menu.top {
     line-height: 26px;
     list-style: circle inside url("../img/m_scircle.png");
     margin-left: 33px;
+    margin-bottom: -4px;
 }
 
 .catalog_items a {
@@ -500,14 +494,14 @@ menu.top {
 
 .brand_catalog_parts1 {
     left: 22px;
-    top: 49px;
+    top: 45px;
     position: absolute;
     width: 132px;
 }
 
 .brand_catalog_parts2 {
     left: 21px;
-    top: 163px;
+    top: 158px;
     position: absolute;
     width: 134px;
 }
@@ -671,14 +665,13 @@ footer {
 ******************************************************************************/
 .outer_circle {
     border: 1px solid rgb(184, 198, 209);
-    /*background-color: rgb(17, 65, 101);*/
-    background: radial-gradient(circle, rgb(184, 198, 209), rgb(17, 65, 101));
+    background-color: rgb(17, 65, 101);
     border-radius: 50%;
     height: 22px;
     position: absolute;
     width: 22px;
-    left: 28px;
-    top: 47px;
+    left: 3px;
+    top: 1px;
 }
 
 .inner_circle {
@@ -690,4 +683,8 @@ footer {
     position: absolute;
     top: 5px;
     width: 10px;
+}
+
+.text_circle {
+    margin-left: 29px;
 }
