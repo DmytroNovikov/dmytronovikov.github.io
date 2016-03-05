@@ -363,10 +363,11 @@ menu.top {
 }
 
 .catalog_items a {
-     display: block;
+     display: inline-block;
      color: #465961;
      font-size: 12px;
      letter-spacing: 1px;
+     line-height: 13px;
      text-decoration: none;
  }
 
