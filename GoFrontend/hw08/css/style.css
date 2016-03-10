@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*******************************************************************************
+* This is a container that encapsultes all the elements
+*******************************************************************************/
+.container {
+    background-color: rgba(237, 216, 221, 1);
+    /*height: 500px;*/
+
+    color: #fff;
+    font-family: 'LeagueGothicRegular', sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 320px;
+}
+
+header {
+    margin-top: 59px;
+}
+
+/*******************************************************************************
+* PINGBULLER Logo
+*******************************************************************************/
+.brandname {
+    color: #fff;
+    display: block;
+    font-size: 49px;
+    float: left;
+    letter-spacing: -0.9px;
+    /* The rihght margin is set to push the menue to the right border*/
+    margin-right: 175px;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.brandname > span {
+    color: #33263a;
+    /*
+    *  Gradient font color works only on Webkit browsers.
+    */
+    background: -webkit-linear-gradient(#745083, #33263a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* End of gradient color */
+    text-shadow: none;
+}
+
+/******************************************************************************
+* Top Menu Block
+******************************************************************************/
+.menu {
+    float: right;
+    margin: 12px 0 0 0px;
+    /*margin-top: 12px;*/
+    padding: 0;
+}
+
+.menu__item {
+    display: block;
+    float: left;
+    margin-left: 52px;
+}
+
+.menu__item:first-child {
+    margin-left: 0px;
+}
+
+.menu__link {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu__link:hover {
+    border-bottom: solid 2px #edbfff;
+}
+
+/******************************************************************************
+* clearfix
+******************************************************************************/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************************************************************************
+*    Width: between 768px and 959px
+******************************************************************************/
+@media screen and (max-width: 959px) {
+    /* Move the Top Menu to the next line */
+    .menu {
+        float: left;
+        margin-top: 30px;
+    }
+}
+
+/******************************************************************************
+*    Width: between 480px and 767px
+******************************************************************************/
+@media screen and (max-width: 767px) {
+    /* Center PINGBULLER Logo */
+    .brandname {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    /* Reshape the Top Menu */
+    .menu {
+        background-color: #36293e;
+        border: 1px solid #051116;
+        border-radius: 10px;
+        /*clear: both;*/
+        /*display: none;*/
+        float: none;
+        opacity: 0.9;
+        width: 244px;
+        margin: 17px auto 0px auto;
+        /* width: 246px height 41px (with 2px border)*/
+    }
+
+    .menu__item {
+        border-bottom: 2px solid #503d57;
+        /*border-image: url("../img/menu_border.png") round;
+        border-image: linear-gradient(#35273d, #503d57);*/
+        float: none;
+        line-height: 38px;
+        margin-left: 0px;
+        text-align: center;
+
+        /*display: none;*/
+    }
+
+
+    .menu__item:first-child {
+        /*display: block;*/
+    }
+
+    .menu__item:last-child {
+        border-bottom: 0px;
+    }
+
+    .menu__item:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom: 2px solid #fff;
+    }
+
+    .menu__item:last-child:hover {
+        border-radius: 10px;
+    }
+
+    .menu__link {
+        padding: 0%;
+    }
+
+    .menu__link:hover {
+        border-bottom: 0px;
+        /*border-bottom: 2px solid #edbfff;*/
+    }
+}
+
+/******************************************************************************
+*    Width: less then 480px
+******************************************************************************/
+@media screen and (max-width: 479px) {
+}
