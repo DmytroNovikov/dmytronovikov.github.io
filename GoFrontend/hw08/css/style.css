@@ -89,6 +89,7 @@ header {
 /******************************************************************************
 * Top Vertical Menu
 ******************************************************************************/
+/* Selected Item */
 .menu--selected {
     display: none;
     margin: 18px auto 0 auto;
@@ -110,10 +111,12 @@ header {
     text-decoration: underline;
 }
 
-.menu--selected .menu__item--selected:hover .menu--vertical {
+.menu--selected > .menu__item--selected:hover > .menu--vertical {
+    /*  Activates popup menu */
     display: block;
 }
 
+/* popup menu */
 .menu--vertical {
     background-color: #36293e;
     border: 1px solid #051116;
@@ -123,7 +126,6 @@ header {
     margin: 0px auto;
     padding: 0;
     position: absolute;
-    /*left: 116px;*/
     top: -1px;
     z-index: 1;
 }
@@ -138,17 +140,25 @@ header {
     text-align: center;
 }
 
-
 .menu__item--vertical:last-child {
+    /* Hiding the separation line for the last menu item*/
     border-bottom: 0px;
 }
 
 .menu__item--vertical:hover {
+    /* Underlining the active menu item */
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid #fff;
 }
 
+.menu__item--vertical:first-child:hover {
+    /* Rounding top corners of the first active menu item */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .menu__item--vertical:last-child:hover {
+    /* Underlining the last active menu item */
     border-radius: 10px;
 }
 
@@ -159,11 +169,6 @@ header {
     text-decoration: none;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     padding: 0%;
-}
-
-.menu__link--vertical:hover {
-    border-bottom: 0px;
-    /*border-bottom: 2px solid #edbfff;*/
 }
 
 /******************************************************************************
