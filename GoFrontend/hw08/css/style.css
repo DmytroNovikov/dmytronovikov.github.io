@@ -40,8 +40,8 @@
     color: #fff;
     font-family: 'LeagueGothicRegular', sans-serif;
     margin: 0 auto;
-    max-width: 960px;
-    min-width: 320px;
+    position: relative;
+    width: 960px;
 }
 
 /*******************************************************************************
@@ -149,7 +149,7 @@
     /*border-image: url("../img/menu_border.png") round;
     border-image: linear-gradient(#35273d, #503d57);*/
     display: block;
-    line-height: 38px;
+    line-height: 42px;
     margin-left: 0px;
     text-align: center;
 }
@@ -163,8 +163,14 @@
     border-bottom: 2px solid #fff;
 }
 
+.menu__item--vertical:first-child:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .menu__item--vertical:last-child:hover {
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .menu__link--vertical {
@@ -193,27 +199,28 @@
 
 .slider-arrrows {
     background-image: url("../img/arrows.png");
+    background-size: auto;
     cursor: pointer;
-    height: 42px;
+    height: 31px;
     position: absolute;
-    top: 44.5%;
-    width: 30px;
+    top: 50%;
+    width: 20px;
 }
 
 .slider-arrrows--left {
     background-position: 0 0;
-    left: 1%;
+    left: 0px;
 }
 
 .slider-arrrows--right {
-    background-position: -30px 0;
-    right: 1%;
+    background-position: -21px 0;
+    right: 0px;
 }
 
 .slider-text {
     float: left;
     margin-top: 27px;
-    width: 55%;
+    width: 528px;
 }
 
 .slider-text-title {
@@ -249,7 +256,7 @@
     margin-top: -17px;
     text-align: center;
     position: relative;
-    width: 45%;
+    width: 412px;
 }
 
 /* Play button */
@@ -268,8 +275,11 @@
 .slider-dots {
     bottom: 48px;
     /* Next 2 lines should center the dots */
-    left: 70%;
-    margin-left: -37px;;
+    left: 50%;
+    margin-left: -40px;
+    /* Next 2 lines should be used to match the mockup on 960px */
+    /*left: 70%;
+    margin-left: -37px;*/
     position: absolute;
 }
 
@@ -308,24 +318,99 @@
 *    Width: between 768px and 959px
 ******************************************************************************/
 @media screen and (max-width: 959px) {
+
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    *
+    * BUG REPORT
+    *
+    * Environment:
+    *    Windows 10
+    *    Chrome Version 49.0.2623.87 m
+    *
+    * The style is not applied for the menu class if the widh is greater than
+    * 942 pixels.
+    *
+    * Screenshot
+    *    http://dmytronovikov.github.io/GoFrontend/hw08/bugs/Bug-001.png
+    *
+    *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    .container {
+        padding: 0 20px 0 20px;
+        width: 728px;
+    }
+
     /* Move the Top Menu to the next line */
     .menu {
         float: left;
-        margin-top: 21px;
+        margin-top: 29px;
     }
+
+    /* Change the parameters of the slider */
+    .slider-background {
+        margin-top: 77px;
+    }
+
+    .slider-text {
+        height: 240px;
+        margin-top: 47px;
+        overflow: hidden;
+        padding-left: 24px;
+        width: 290px;
+    }
+
+    .slider-text-title {
+        font-size: 48px;
+    }
+
+    .slider-text-slogan {
+        font-size: 24px;
+        margin-top: 9px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .slider-text-description {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 26px;
+    }
+
+    .slider-img {
+        margin-top: -23px;
+        width: 325px;
+    }
+
+    .slider-dots {
+        bottom: 105px;
+    }
+
 }
 
 /******************************************************************************
 *    Width: between 480px and 767px
 ******************************************************************************/
 @media screen and (max-width: 767px) {
+
+    .site-top {
+        padding-bottom: 100px;
+    }
+
+    .container {
+        /*padding: 0 20px 0 20px;*/
+        padding-top: 1px;
+        margin-top: -1px;
+        width: 440px;
+    }
+
     /* Center PINGBULLER Logo */
     .brandname {
         float: none;
         margin-right: 0;
         text-align: center;
     }
-    /* Replace horizontal menu vith vertical one. */
+
+    /* Replace horizontal menu vith vertical one */
     .menu {
         display: none;
     }
@@ -337,10 +422,90 @@
     .menu--vertical {
         display: none;
     }
+
+    /* Change the parameters of the slider */
+    .slider-background {
+        height: 246px;
+        margin-top: 33px;
+    }
+
+    .slider-text {
+        height: 170px;
+        margin-top: 43px;
+        padding-left: 21px;
+        width: 205px;
+    }
+
+    .slider-text-title {
+        font-size: 36px;
+    }
+
+    .slider-text-slogan {
+        font-size: 18px;
+        letter-spacing: -0.1px;
+        margin-top: 2px;
+    }
+
+    /* Hiding description of the slider */
+    .slider-text-description {
+        display: none;
+    }
+
+    .slider-img {
+        height: 225px;
+        margin-top: -8px;
+        width: 210px;
+    }
+
+    .slider-img > img {
+        height: auto;
+        width: 191px;
+    }
+
+    .slider-img-play {
+        background-size: cover;
+        cursor: pointer;
+        height: 53px;
+        left: 50%;
+        top: 46%;
+        width: 53px;
+    }
+
+    .slider-dots {
+        bottom: 60px;
+    }
+
 }
 
 /******************************************************************************
 *    Width: less then 480px
 ******************************************************************************/
 @media screen and (max-width: 479px) {
+
+    .site-top {
+        padding-bottom: 68px;
+    }
+
+    .container {
+        /*padding: 0 20px 0 20px;*/
+        width: 280px;
+    }
+
+    /* Change the parameters of the slider */
+    .slider-background {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .slider-text {
+        padding-left:45px;
+    }
+
+    .slider-img {
+        display: none;
+    }
+
+    .slider-dots {
+        bottom: 68px;
+    }
+
 }
