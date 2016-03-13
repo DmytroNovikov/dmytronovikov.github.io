@@ -29,7 +29,7 @@
 .site-top {
     background: url("../img/top-background.jpg") center;
     background-size: cover;
-    padding-bottom: 159px;
+    padding-bottom: 168px;
     position: relative;
 }
 
@@ -220,7 +220,8 @@
 .slider-text {
     float: left;
     margin-top: 27px;
-    width: 528px;
+    margin-left: 40px;
+    width: 500px;
 }
 
 .slider-text-title {
@@ -353,6 +354,7 @@
 
     .slider-text {
         height: 240px;
+        margin-left: 0px;
         margin-top: 47px;
         overflow: hidden;
         padding-left: 24px;
