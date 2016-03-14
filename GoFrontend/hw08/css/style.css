@@ -26,7 +26,7 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *
-* This section provides a background for logo, menu and slider
+* This part contains logo, menu, slider and provides a background
 *
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -328,10 +328,50 @@
     height: 342px;
 }
 
+.about-company-col::before {
+    background-image: url("../img/about_co_ico.png");
+    background-position: 0 0;
+    height: 32px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 32px;
+}
+
 .about-company-col {
     float: left;
+    position: relative;
     width: 33%;
 }
+
+.about-company-col__title {
+    font-size: 30px;
+    font-weight: normal;
+    padding-left: 50px;
+}
+
+.about-company-col__text {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    height: 100px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    overflow: hidden;
+    padding-left: 50px;
+}
+
+.about-company-col__link {
+    color: white;
+    float: right;
+    font-size: 18px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 200ms ease;
+}
+
 
 .c {
     background-image: url("../img/about_co_ico.png");
@@ -392,7 +432,7 @@
     *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    * This section provides a background for logo, menu and slider
+    * This part contains logo, menu, slider and provides a background
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .container {
         padding: 0 20px 0 20px;
@@ -461,7 +501,7 @@
 @media screen and (max-width: 767px) {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    * This section provides a background for logo, menu and slider
+    * This part contains logo, menu, slider and provides a background
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .site-top {
         padding-bottom: 100px;
@@ -568,7 +608,7 @@
 @media screen and (max-width: 479px) {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    * This section provides a background for logo, menu and slider
+    * This part contains logo, menu, slider and provides a background
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .site-top {
         padding-bottom: 68px;
