@@ -328,26 +328,57 @@
     height: 342px;
 }
 
-.about-company-col::before {
-    background-image: url("../img/about_co_ico.png");
-    background-position: 0 0;
-    height: 32px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 32px;
-}
-
 .about-company-col {
     float: left;
+    margin-top: 75px;
+    margin-right: 30px;
     position: relative;
-    width: 33%;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.about-company-col:last-child {
+    margin-right: 0;
+}
+
+.about-company-col__wranch::before {
+    /*or spanner outside of North America*/
+    background-image: url("../img/about_co_ico.png");
+    background-position: 0 0;
+    content: '';
+    height: 32px;
+    position: absolute;
+    width: 32px;
+    top: 7px;
+    left: 8px;
+}
+
+.about-company-col__speach-bubble::before {
+    background-image: url("../img/about_co_ico.png");
+    background-position: -32px 0;
+    content: '';
+    height: 32px;
+    position: absolute;
+    width: 32px;
+    top: 7px;
+    left: 8px;
+}
+
+.about-company-col__note::before {
+    background-image: url("../img/about_co_ico.png");
+    background-position: -64px 0;
+    content: '';
+    height: 32px;
+    position: absolute;
+    width: 32px;
+    top: 7px;
+    left: 8px;
 }
 
 .about-company-col__title {
     font-size: 30px;
     font-weight: normal;
-    padding-left: 50px;
+    padding-left: 64px;
 }
 
 .about-company-col__text {
@@ -355,45 +386,85 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    height: 100px;
+    height: 120px;
     line-height: 24px;
-    letter-spacing: -0.4px;
+    margin-top: 10px;
     overflow: hidden;
-    padding-left: 50px;
+    padding-left: 64px;
 }
 
 .about-company-col__link {
     color: white;
     float: right;
     font-size: 18px;
-    margin-right: 15px;
-    text-transform: uppercase;
+    margin-right: 21px;
+    margin-top: 18px;
     text-decoration: none;
     transition: 200ms ease;
 }
 
-
-.c {
-    background-image: url("../img/about_co_ico.png");
-    background-size: auto;
-    /*cursor: pointer;*/
-    height: 32px;
-    width: 32px;
-    /*position: absolute;
-    top: 50%;*/
-    /*left: 0px;*/
+.about-company-col__link:hover {
+    text-shadow: 0 0 8px #fff, 0 0 8px #000;
 }
 
-.c1 {
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*
+* This section contains companies' logo
+*
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.companies-logo {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #fefefe;
+    border-top: 1px solid #fff;
+}
+
+.companies-logo__wrapper {
+    text-align: center;
+}
+
+.companies-logo__brand {
+    background-image: url("../img/logos.png");
+    content: '';
+    display: inline-block;
+    height: 65px;
+    margin-bottom: 27px;
+    margin-left: 63px;
+    margin-top: 25px;
+}
+
+.companies-logo__brand--1 {
     background-position: 0 0;
+    margin-left: 0;
+    width: 70px;
 }
 
-.c2 {
-    background-position: -32px 0;
+.companies-logo__brand--2 {
+    background-position: -134px 0;
+    width: 73px;
 }
 
-.c3 {
-    background-position: -64px 0;
+.companies-logo__brand--3 {
+    background-position: -270px 0;
+    width: 66px;
+}
+
+.companies-logo__brand--4 {
+    background-position: -409px 0;
+    width: 52px;
+}
+
+.companies-logo__brand--5 {
+    background-position: -528px 0;
+    width: 103px;
+}
+
+.companies-logo__brand--6 {
+    background-position: -696px 0;
+    width: 79px;
 }
 
 /******************************************************************************
@@ -434,6 +505,10 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This part contains logo, menu, slider and provides a background
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .site-top {
+        padding-bottom: 155px;
+    }
+
     .container {
         padding: 0 20px 0 20px;
         width: 728px;
@@ -482,12 +557,46 @@
     }
 
     .slider-dots {
-        bottom: 105px;
+        bottom: 101px;
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section provides information about the company
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .about-company-col {
+        width: 243px;
+        margin-right: 0px;
+    }
+
+    .about-company-col__speach-bubble {
+        width: 242px;
+    }
+
+    .about-company-col__title {
+        font-size: 24px;
+        /*padding-left: 64px;*/
+    }
+
+    .about-company-col__text {
+        height: 140px;
+        margin-top: 5px;
+    }
+
+    .about-company-col__link {
+        margin-right: 45px;
+        margin-top: 10px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains companies' logo
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .companies-logo__brand {
+        margin-left: 53px;
+    }
+
+    .companies-logo__brand--1 {
+        margin-left: 0;
+    }
 
 }
 
@@ -595,6 +704,55 @@
         height: 599px;
     }
 
+    .about-company-col {
+        margin-top: 77px;
+        width: 440px;
+    }
+
+    .about-company-col__wranch::before {
+        top: 2px;
+        left: 11px;
+    }
+
+    .about-company-col__speach-bubble::before {
+        top: 2px;
+        left: 11px;
+    }
+
+    .about-company-col__speach-bubble {
+        margin-top: 25px;
+    }
+
+    .about-company-col__note::before {
+        top: 2px;
+        left: 11px;
+    }
+
+    .about-company-col__note {
+        margin-top: 29px;
+    }
+
+    .about-company-col__text {
+        height: 70px;
+    }
+
+    .about-company-col__link {
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains companies' logo
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .companies-logo__wrapper {
+        padding: 8px 0 40px 22px;
+    }
+
+    .companies-logo__brand {
+        margin: 26px 34px 0 13px;
+        vertical-align: middle;
+    }
+
 }
 
 
@@ -639,4 +797,31 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section provides information about the company
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .about-company-col {
+        margin-top: 70px;
+        width: 280px;
+    }
+
+    .about-company-col__speach-bubble {
+        margin-top: 25px;
+    }
+
+    .about-company-col__note {
+        margin-top: 41px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains companies' logo
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .companies-logo__wrapper {
+        /*box-sizing: border-box;*/
+        padding: 50px 0px 0px 0px;
+    }
+
+    .companies-logo__brand {
+        margin: 40px 30px 0px 0px;
+        vertical-align: middle;
+    }
+
 }
