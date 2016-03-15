@@ -400,7 +400,7 @@
     margin-right: 21px;
     margin-top: 18px;
     text-decoration: none;
-    transition: 200ms ease;
+    /*transition: 200ms ease;*/
 }
 
 .about-company-col__link:hover {
@@ -416,53 +416,55 @@
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.companies-logo {
+.co-logo {
     background-color: #f9f9f9;
     border-bottom: 1px solid #fefefe;
     border-top: 1px solid #fff;
 }
 
-.companies-logo__wrapper {
-    text-align: center;
+.co-logo__wrapper {
+    padding: 25px 65px;
 }
 
-.companies-logo__brand {
+.co-logo__brand-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.co-logo__brand {
     background-image: url("../img/logos.png");
     content: '';
-    display: inline-block;
+    display: block;
     height: 65px;
-    margin-bottom: 27px;
-    margin-left: 63px;
-    margin-top: 25px;
 }
 
-.companies-logo__brand--1 {
+.co-logo__brand--1 {
     background-position: 0 0;
-    margin-left: 0;
     width: 70px;
 }
 
-.companies-logo__brand--2 {
+.co-logo__brand--2 {
     background-position: -134px 0;
     width: 73px;
 }
 
-.companies-logo__brand--3 {
+.co-logo__brand--3 {
     background-position: -270px 0;
     width: 66px;
 }
 
-.companies-logo__brand--4 {
+.co-logo__brand--4 {
     background-position: -409px 0;
     width: 52px;
 }
 
-.companies-logo__brand--5 {
+.co-logo__brand--5 {
     background-position: -528px 0;
     width: 103px;
 }
 
-.companies-logo__brand--6 {
+.co-logo__brand--6 {
     background-position: -696px 0;
     width: 79px;
 }
@@ -590,12 +592,23 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-    .companies-logo__brand {
-        margin-left: 53px;
+
+    .co-logo__wrapper {
+        padding: 25px 2px;
     }
 
-    .companies-logo__brand--1 {
-        margin-left: 0;
+    .co-logo__brand-wrapper {
+        margin: 0 auto;
+        padding: 0 26px;
+        display: inline-block;
+    }
+
+    .co-logo__brand-wrapper:first-child {
+        padding-left: 0;
+    }
+
+    .co-logo__brand-wrapper:last-child {
+        padding-right: 0;
     }
 
 }
@@ -744,13 +757,20 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-    .companies-logo__wrapper {
-        padding: 8px 0 40px 22px;
+    .co-logo__wrapper {
+        padding: 37px 0px 15px;
     }
 
-    .companies-logo__brand {
-        margin: 26px 34px 0 13px;
-        vertical-align: middle;
+    .co-logo__brand-wrapper {
+        padding-bottom: 22px;
+    }
+
+    .co-logo__brand-wrapper:first-child {
+        padding-left: 64px;
+    }
+
+    .co-logo__brand-wrapper:nth-child(4) {
+        padding-left: 50px;
     }
 
 }
@@ -814,14 +834,31 @@
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-    .companies-logo__wrapper {
-        /*box-sizing: border-box;*/
-        padding: 50px 0px 0px 0px;
+    .co-logo__wrapper {
+        padding: 52px 0px 15px;
     }
 
-    .companies-logo__brand {
-        margin: 40px 30px 0px 0px;
-        vertical-align: middle;
+    .co-logo__brand-wrapper {
+        padding-bottom: 57px;
+    }
+
+    .co-logo__brand-wrapper:first-child {
+        padding-left: 43px;
+    }
+
+    .co-logo__brand-wrapper:nth-child(3) {
+        /*padding-bottom: 40px;*/
+        padding-left: 51px;
+        padding-right: 10px;
+    }
+
+    .co-logo__brand-wrapper:nth-child(3),
+    .co-logo__brand-wrapper:nth-child(4) {
+        padding-bottom: 36px;
+    }
+
+    .co-logo__brand-wrapper:nth-child(5) {
+        padding-left: 23px;
     }
 
 }
