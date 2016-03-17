@@ -469,6 +469,51 @@
     width: 79px;
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*
+* The footer of the page
+*
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+footer {
+    background: url("../img/bottom-background.jpg") center;
+    background-size: cover;
+    height: 114px;
+}
+
+.menu--footer {
+    float: left;
+    margin: 46px 0 0 0px;
+}
+
+.menu__item--footer {
+    margin-left: 43px;
+}
+
+.menu__link--footer {
+    font-size: 20px;
+}
+
+.footer__design {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    margin: 54px 0 0 0;
+}
+
+.footer__design > a {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer__design > a:hover {
+    text-shadow: 0 0 8px #fff, 0 0 8px #000;
+}
+
 /******************************************************************************
 * clearfix
 ******************************************************************************/
@@ -609,6 +654,17 @@
 
     .co-logo__brand-wrapper:last-child {
         padding-right: 0;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * The footer of the page
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    footer {
+        height: 201px;
+    }
+
+    .footer__design {
+        margin: 103px 2px 0 0;
     }
 
 }
@@ -773,6 +829,22 @@
         padding-left: 50px;
     }
 
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * The footer of the page
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .menu--footer {
+        margin: 45px 0 0 3px;
+    }
+
+    .menu__item--footer {
+        margin-left: 25px;
+    }
+
+    .footer__design {
+        margin: 37px 152px 0 0;
+    }
+
 }
 
 
@@ -859,6 +931,17 @@
 
     .co-logo__brand-wrapper:nth-child(5) {
         padding-left: 23px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * The footer of the page
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .menu--footer {
+        display: none;
+    }
+
+    .footer__design {
+        margin: 41px 73px 0 0;
     }
 
 }
