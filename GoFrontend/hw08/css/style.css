@@ -64,7 +64,7 @@
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.brandname > span {
+.brandname__end {
     color: #33263a;
     /*
     *  Gradient font color works only on Webkit browsers.
@@ -472,6 +472,103 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *
+* This section contains recent comments and news categories
+*
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.news {
+    background-color: #ececec;
+    height: 396px;
+    border-top: solid 1px rgb(236, 236, 236);
+}
+
+/* Hiding two Categories columns */
+
+.news article:nth-child(3) {
+    display: none;
+}
+
+.news article:nth-child(4) {
+    display: none;
+}
+
+.news__column {
+    box-sizing: border-box;
+    float: left;
+    margin-top: 94px;
+    width: 33.33%;
+}
+
+.news__column--left {
+    padding-right: 4%;
+}
+
+.news__column--center {
+    margin-top: 96px;
+    padding: 0 1.9%;
+}
+
+.news__column--right {
+    margin-top: 96px;
+    padding-left: 4%;
+}
+
+/* Brandname PIGBULLER */
+.brandname--article {
+    color: #454545;
+    float: none;
+    font-size: 48px;
+    margin: 0 0;
+    text-shadow: 1px 1px 0px rgb(195, 195, 195);
+}
+
+.brandname__end--article{
+    color: rgb(185, 185, 185);
+}
+
+/* Copyrihgt below the brandname */
+.news-article__copyright {
+    color: #c5c5c5;
+    font-family: "Georgia";
+    font-size: 16px;
+    font-style: italic;
+    height: 16px;
+    margin: 14px 0 12px;
+    overflow: hidden;
+}
+
+/* The headline of the article */
+.news-article__headline {
+    color: #454545;
+    height: 30px;
+    font-size: 30px;
+}
+
+/* The text of the article */
+.news-article__text {
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 120px;
+    line-height: 24px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+/* The text of the article in the central column*/
+.news-article__text--center {
+    height: 170px;
+    margin: 9px 5px 0px 1px;
+}
+
+.news-article__text--right {
+    height: 170px;
+    margin: 9px 5px 0px 1px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*
 * The footer of the page
 *
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -551,6 +648,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This part contains logo, menu, slider and provides a background
+    * (768px - 959px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .site-top {
         padding-bottom: 155px;
@@ -609,6 +707,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section provides information about the company
+    * (768px - 959px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .about-company-col {
         width: 243px;
@@ -636,6 +735,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
+    * (768px - 959px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .co-logo__wrapper {
@@ -657,7 +757,66 @@ footer {
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains recent comments and news categories
+    * (768px - 959px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    /* Hide PigbullER and Comments columns and display two Categories columns */
+    .news article:nth-child(1) {
+        display: none;
+    }
+
+    .news article:nth-child(2) {
+        display: none;
+    }
+
+    .news article:nth-child(3) {
+        display: block;
+    }
+
+    .news article:nth-child(4) {
+        display: block;
+    }
+
+    .news-article__headline {
+        height: 24px;
+        font-size:24px;
+    }
+
+    .news__column {
+        margin-top: 100px;
+    }
+
+    .news__column--left {
+        padding-right: 4%;
+    }
+
+    .news__column--center {
+        margin-top: 100px;
+        padding: 0 3.3%;
+    }
+
+    .news__column--right {
+        margin-top: 100px;
+        padding-left: 6%;
+    }
+
+    .news-article__text {
+        height: 170px;
+        margin-top: 10px;
+    }
+
+    .news-article__text--center {
+        margin: 10px 5px 0px 1px;
+    }
+
+    .news-article__text--right {
+        margin: 10px 5px 0px 1px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * The footer of the page
+    * (768px - 959px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     footer {
         height: 201px;
@@ -680,6 +839,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This part contains logo, menu, slider and provides a background
+    * (480px - 767px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .site-top {
         padding-bottom: 100px;
@@ -766,6 +926,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section provides information about the company
+    * (480px - 767px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .about-company {
         /* 480px - 599px with 2 lines */
@@ -811,7 +972,52 @@ footer {
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains recent comments and news categories
+    * (480px - 767px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .news {
+        height: 668px;
+    }
+
+    .news__column {
+        width: 100%;
+    }
+
+    .news__column {
+        margin-top: 79px;
+    }
+
+    .news__column--left {
+        padding-right: 0;
+    }
+
+    .news__column--center {
+        margin-top: 51px;
+        padding: 0 0;
+    }
+
+    .news__column--right {
+        margin-top: 54px;
+        padding: 0 0;
+    }
+
+    .news-article__text {
+        height: 100px;
+    }
+
+    .news-article__text--center {
+        margin: 10px 0 0 0;
+    }
+
+    .news-article__text--right {
+        margin: 10px 0 0 0;
+    }
+
+    /*HERE*/
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
+    * (480px - 767px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .co-logo__wrapper {
         padding: 37px 0px 15px;
@@ -829,9 +1035,14 @@ footer {
         padding-left: 50px;
     }
 
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains recent comments and news categories
+    * (480px - 767px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * The footer of the page
+    * (480px - 767px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .menu--footer {
         margin: 45px 0 0 3px;
@@ -859,6 +1070,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This part contains logo, menu, slider and provides a background
+    * (up to 480px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .site-top {
         padding-bottom: 68px;
@@ -888,6 +1100,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section provides information about the company
+    * (up to 480px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     .about-company-col {
@@ -905,6 +1118,7 @@ footer {
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains companies' logo
+    * (up to 480px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .co-logo__wrapper {
         padding: 52px 0px 15px;
@@ -934,7 +1148,18 @@ footer {
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains recent comments and news categories
+    * (up to 480px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    /* Hide the section */
+    .news {
+        display: none;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * The footer of the page
+    * (up to 480px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     .menu--footer {
         display: none;
