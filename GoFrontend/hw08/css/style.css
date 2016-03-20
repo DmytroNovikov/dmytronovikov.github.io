@@ -20,7 +20,30 @@
          url('../fonts/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-extrabold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -245,7 +268,7 @@
 
 .slider-text-description {
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
@@ -317,7 +340,7 @@
 * This section provides information about the company
 *
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .about-company {
     border-bottom: solid 1px #000;
@@ -383,7 +406,7 @@
 
 .about-company-col__text {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     font-weight: 300;
     height: 120px;
@@ -407,6 +430,167 @@
     text-shadow: 0 0 8px #fff, 0 0 8px #000;
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*
+* This section contains recent updates
+*
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.recent-updates {
+    background-color: #f9f9f9;
+    height: 484px;
+}
+
+.recent-updates__left-block {
+    color: #000;
+    float: left;
+    width: 50%;
+}
+
+/* A block with "PINGBULLER STARTS HERE" headline */
+.left-block__starts-here {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    height: 271px;
+    left: 24px;
+    top: 98px;
+    position: absolute;
+    width: 425px;
+}
+
+.left-block__starts-here:after {
+    /*bottom: -20px;*/
+    border: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    content: '';
+    /*left: 366px;*/
+    left: 86%;
+    position: absolute;
+    top: 100%;
+}
+
+/* A text block inside the block with "PINGBULLER STARTS HERE" headline */
+.starts-here__text {
+    margin: 29px 26px 10px 38px;
+    overflow: hidden;
+}
+
+.starts-here__text::before {
+    background-image: url("../img/recent-updates_photo.png");
+    background-position: 0 0;
+    content: '';
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    top: 18px;
+    left: -25px;
+}
+
+.starts-here__header {
+    height: 30px;
+    font-size: 30px;
+    color: #454545;
+}
+
+.starts-here__quotation {
+    color: #454545;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    height: 165px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.starts-here__header--violet {
+    color: #edbfff;
+}
+
+/* Dots below the slider */
+.slider-dots--left-block {
+    bottom: -42px;
+    /* Next 2 lines should center the dots */
+    left: 50%;
+    margin-left: -42px;
+    position: absolute;
+}
+
+.slider-single-dot--left-block {
+    background-color: #fff;
+    border: solid 1px #eee;
+    margin-left: 4px;
+}
+
+.slider-single-dot--starts-here:first-child {
+    margin-left: 0px;
+}
+
+.slider-single-dot--starts-here--active {
+    background-image: linear-gradient(#a1a1a1, #464646);
+    border: 3px solid #fff;
+    height: 13px;
+    width: 13px;
+}
+
+.recent-updates__right-block {
+    color: #000;
+    float: right;
+    width: 50%;
+}
+
+.right-block__updates {
+    margin: 127px 0 0 30px;
+    position: absolute;
+}
+
+.blog-post {
+    background-image: url("../img/img-post-1.png");
+    background-repeat: no-repeat;
+    height: 49px;
+    margin-top: 16px;
+    padding-left: 67px;
+    padding-top: 3px;
+}
+
+.blog-post--p2 {
+    background-image: url("../img/img-post-2.png");
+}
+
+.blog-post--p3 {
+    background-image: url("../img/img-post-3.png");
+    margin-top: 12px;
+}
+
+.blog-post__title {
+    height: 16px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blog-post__text {
+    color: #454545;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: -0.4px;
+    overflow: hidden;
+}
+
+/* READ MORE HERE link */
+.blog-post__link {
+    color: #000;
+    display: block;
+    float: right;
+    font-size: 18px;
+    margin: 19px 4px;
+    text-decoration: none;
+}
+
+.blog-post__link--posts {
+    display: none;
+}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -414,12 +598,12 @@
 * This section contains companies' logo
 *
 *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .co-logo {
     background-color: #f9f9f9;
-    border-bottom: 1px solid #fefefe;
-    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #e6e6e6;
 }
 
 .co-logo__wrapper {
@@ -547,7 +731,7 @@
 /* The text of the article */
 .news-article__text {
     color: #787878;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     height: 120px;
     line-height: 24px;
@@ -594,10 +778,10 @@ footer {
 
 .footer__design {
     float: right;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 100;
     font-size: 12px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     margin: 54px 0 0 0;
 }
 
@@ -731,6 +915,74 @@ footer {
     .about-company-col__link {
         margin-right: 45px;
         margin-top: 10px;
+    }
+
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    *
+    * This section contains recent updates
+    * (768px - 959px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* A block with "PINGBULLER STARTS HERE" headline */
+    .left-block__starts-here {
+        left: 44px;
+        width: 312px;
+    }
+
+    /* A text block inside the block with "PINGBULLER STARTS HERE" headline */
+    .starts-here__text {
+        margin: 28px 26px 10px 38px;
+    }
+
+    .starts-here__header {
+        font-size: 24px;
+    }
+
+    .starts-here__quotation {
+        height: 150px;
+        letter-spacing: -0.4px;
+        padding-top: 26px;
+    }
+
+    .starts-here__header--violet {
+        display: block;
+    }
+
+    /* Dots below the slider */
+    .slider-dots--left-block {
+        bottom: -42px;
+    }
+
+    .right-block__updates {
+        margin: 127px 0 0 30px;
+    }
+
+    .starts-here__header--right {
+        font-size: 30px;
+    }
+
+    .blog-post--p3 {
+        margin-top: 14px;
+    }
+
+    .blog-post__text {
+        height: 34px;
+        overflow: hidden;
+        width: 250px;
+    }
+
+    /* READ MORE HERE link */
+    .blog-post__link {
+        display: none;
+    }
+
+    .blog-post__link--posts {
+        color: #000;
+        display: block;
+        float: right;
+        font-size: 18px;
+        margin: 16px -4px;
+        text-decoration: none;
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -972,6 +1224,82 @@ footer {
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    *
+    * This section contains recent updates
+    * (480px - 767px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .recent-updates {
+        height: 785px;
+    }
+
+    .recent-updates__left-block {
+        width: 100%;
+    }
+
+    .recent-updates__right-block {
+        width: 100%;
+    }
+
+    .left-block__starts-here {
+        top: 69px;
+        width: 416px;
+    }
+
+    .left-block__starts-here:after {
+        display: none;
+    }
+
+    .starts-here__text {
+        margin: 26px 26px 10px 38px;
+    }
+
+    .starts-here__header {
+        font-size: 30px;
+    }
+
+    .starts-here__header--violet {
+        display: inline;
+    }
+
+    .starts-here__quotation {
+        height: 170px;
+        padding-top: 14px;
+    }
+
+    .slider-dots {
+        bottom: -42px;
+        margin-left: -48px;
+    }
+
+    .right-block__updates {
+        margin: 429px 0 0 64px;
+    }
+
+    .blog-post__link--posts {
+        margin-right: -13px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    * This section contains companies' logo
+    * (480px - 767px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .co-logo__wrapper {
+        padding: 37px 0px 15px;
+    }
+
+    .co-logo__brand-wrapper {
+        padding-bottom: 22px;
+    }
+
+    .co-logo__brand-wrapper:first-child {
+        padding-left: 64px;
+    }
+
+    .co-logo__brand-wrapper:nth-child(4) {
+        padding-left: 50px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * This section contains recent comments and news categories
     * (480px - 767px)
     *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -1012,33 +1340,6 @@ footer {
     .news-article__text--right {
         margin: 10px 0 0 0;
     }
-
-    /*HERE*/
-
-    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    * This section contains companies' logo
-    * (480px - 767px)
-    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-    .co-logo__wrapper {
-        padding: 37px 0px 15px;
-    }
-
-    .co-logo__brand-wrapper {
-        padding-bottom: 22px;
-    }
-
-    .co-logo__brand-wrapper:first-child {
-        padding-left: 64px;
-    }
-
-    .co-logo__brand-wrapper:nth-child(4) {
-        padding-left: 50px;
-    }
-
-    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    * This section contains recent comments and news categories
-    * (480px - 767px)
-    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     * The footer of the page
@@ -1114,6 +1415,58 @@ footer {
 
     .about-company-col__note {
         margin-top: 41px;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    *
+    * This section contains recent updates
+    * (up to 480px)
+    *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    .recent-updates {
+        height: 785px;
+    }
+
+    .left-block__starts-here {
+        width: 256px;
+    }
+
+    .starts-here__text {
+        margin: 24px 34px 10px 35px;
+    }
+
+    .starts-here__header {
+        font-size: 24px;
+    }
+
+    .starts-here__header--violet {
+        display: block;
+    }
+
+    .starts-here__quotation {
+        /*height: 170px;*/
+        padding-top: 22px;
+    }
+
+    .slider-dots {
+        bottom: -42px;
+        margin-left: -32px;
+    }
+
+    .right-block__updates {
+        margin: 429px 0 0 0;
+    }
+
+    .starts-here__header--right {
+        font-size: 30px;
+    }
+
+    .blog-post__title {
+        overflow: hidden;
+        width: 215px;
+    }
+
+    .blog-post__link--posts {
+        margin-right: 42px;
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
