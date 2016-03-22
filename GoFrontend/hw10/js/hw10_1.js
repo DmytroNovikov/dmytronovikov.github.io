@@ -11,14 +11,14 @@ var base, exponent;
 do {
   base = parseInt(
     prompt("Введите основание (целое число)"));
-  } while (isNaN(base))
+} while (isNaN(base))
 
-  do {
-    exponent = parseInt(prompt("Ведите экспоненту (целое число)"));
-  } while (isNaN(exponent))
+do {
+  exponent = parseInt(prompt("Ведите экспоненту (целое число)"));
+} while (isNaN(exponent))
 
-  console.log('pow:  ' + base + ' ^ ' + exponent + ' = ' + pow(base, exponent));
-  console.log('powr: ' + base + ' ^ ' + exponent + ' = ' + powr(base, exponent));
+console.log('pow:  ' + base + ' ^ ' + exponent + ' = ' + pow(base, exponent));
+console.log('powr: ' + base + ' ^ ' + exponent + ' = ' + powr(base, exponent));
 
 /**
 *
