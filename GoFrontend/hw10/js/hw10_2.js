@@ -20,7 +20,7 @@ for (var i = 0; i < 5; i++) {
 var login = prompt('Введите имя пользователя').trim();
 
 if (findLogin(names, login)) {
-  console.log( login + ', вы успешно вошли.');
+  alert(login + ', вы успешно вошли.');
 } else {
   alert('Введенное имя пользователя не существует в массиве!');
 }
