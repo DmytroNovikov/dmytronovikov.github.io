@@ -5,10 +5,28 @@
     <title>Start / Stop Watch Example</title>
     <link rel="stylesheet" href="css/chronometer.css" media="screen" charset="utf-8">
     <script src="js/chronometer.js" charset="utf-8"></script>
+    <script src="js/splitchronometer.js" charset="utf-8"></script>
+    <style media="screen">
+      .container {
+        float: left;
+        text-align: center;
+        width:33%;
+      }
+    </style>
   </head>
   <body>
-    <script type="text/javascript">
-      var chronometer = new Chronometer();
-    </script>
+    <div class="container">
+      <script type="text/javascript">
+        var chronometer = new Chronometer(document.getElementsByClassName("container")[0]);
+      </script>
+    </div>
+    <div class="container">
+      <h1>Chronometers</h1>
+    </div>
+    <div class="container">
+      <script type="text/javascript">
+      var splitChronometer = new SplitChronometer(document.getElementsByClassName("container")[2]);
+      </script>
+    </div>
   </body>
 </html>

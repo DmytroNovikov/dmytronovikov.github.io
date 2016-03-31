@@ -40,6 +40,10 @@ function Chronometer(parentHTML = document.body) {
   }
   this._createHTML();
 
+  this._displayTimer = function() {
+
+  }
+
   this._displayTime = function() {
     var dif = (delta == 0) ? ((new Date()).getTime() - counter) : delta;
     var ms = dif % 1000;
@@ -49,9 +53,7 @@ function Chronometer(parentHTML = document.body) {
     var mm = dif % 60;
     var hh = Math.floor(dif / 60);
     if (hh > 99) {
-      hh = 0;
-      mm = 0;
-      ss = 0;
+      hh = mm = ss = 0;
     };
     hmsElement.innerHTML = zeroPad(hh, 2) + ":" + zeroPad(mm, 2) + ":" + zeroPad(ss, 2);
     msElement.innerHTML = "" + zeroPad(ms, 3);
