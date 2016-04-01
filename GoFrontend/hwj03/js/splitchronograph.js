@@ -1,8 +1,8 @@
-function SplitChronometer(parentHTML = document.body) {
+function SplitChronograph(parentHTML = document.body) {
 
   this._createHTML = function() {
     var root = document.createElement("div");
-    root.classList.add("chronometer");
+    root.classList.add("chronograph");
 
     var scr = document.createElement("div");
     scr.classList.add("splitchrono__screen");

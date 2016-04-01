@@ -1,38 +1,38 @@
-function Chronometer(parentHTML = document.body) {
+function Chronograph(parentHTML = document.body) {
 
   this._createHTML = function() {
     var root = document.createElement("div");
-    root.classList.add("chronometer");
+    root.classList.add("chronograph");
 
     var scr = document.createElement("div");
-    scr.classList.add("chronometer__screen");
+    scr.classList.add("chronograph__screen");
     var e = document.createElement("div");
-    e.classList.add("chronometer__screen_hms");
+    e.classList.add("chronograph__screen_hms");
     e.innerHTML = "00:00:00";
     scr.appendChild(e);
     e = document.createElement("div");
-    e.classList.add("chronometer__screen_ms");
+    e.classList.add("chronograph__screen_ms");
     e.innerHTML = "000";
     scr.appendChild(e);
     root.appendChild(scr);
 
     e = document.createElement("div");
-    e.classList.add("chronometer__button", "chronometer__button_start");
+    e.classList.add("chronograph__button", "chronograph__button_start");
     e.innerHTML = "Start";
     root.appendChild(e);
 
     e = document.createElement("div");
-    e.classList.add("chronometer__button", "chronometer__button_pause");
+    e.classList.add("chronograph__button", "chronograph__button_pause");
     e.innerHTML = "Pause";
     root.appendChild(e);
 
     e = document.createElement("div");
-    e.classList.add("chronometer__button", "chronometer__button_resume");
+    e.classList.add("chronograph__button", "chronograph__button_resume");
     e.innerHTML = "Resume";
     root.appendChild(e);
 
     e = document.createElement("div");
-    e.classList.add("chronometer__button", "chronometer__button_clear");
+    e.classList.add("chronograph__button", "chronograph__button_clear");
     e.innerHTML = "Clear";
     root.appendChild(e);
 
@@ -102,14 +102,14 @@ function Chronometer(parentHTML = document.body) {
     msElement.innerHTML = "000";
   }
 
-  var startButton = document.getElementsByClassName("chronometer__button_start")[0];
+  var startButton = document.getElementsByClassName("chronograph__button_start")[0];
   startButton.addEventListener("click", this.startWatch);
-  var pauseButton = document.getElementsByClassName("chronometer__button_pause")[0];
+  var pauseButton = document.getElementsByClassName("chronograph__button_pause")[0];
   pauseButton.addEventListener("click", this.pauseWatch);
-  var resumeButton = document.getElementsByClassName("chronometer__button_resume")[0];
+  var resumeButton = document.getElementsByClassName("chronograph__button_resume")[0];
   resumeButton.addEventListener("click", this.resumeWatch);
-  var clearButton = document.getElementsByClassName("chronometer__button_clear")[0];
+  var clearButton = document.getElementsByClassName("chronograph__button_clear")[0];
   clearButton.addEventListener("click", this.clearWatch);
-  var hmsElement = document.getElementsByClassName("chronometer__screen_hms")[0];
-  var msElement = document.getElementsByClassName("chronometer__screen_ms")[0];
+  var hmsElement = document.getElementsByClassName("chronograph__screen_hms")[0];
+  var msElement = document.getElementsByClassName("chronograph__screen_ms")[0];
 }

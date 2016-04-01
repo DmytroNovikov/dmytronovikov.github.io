@@ -11,7 +11,7 @@
     font-style: normal;
 }
 
-.chronometer {
+.chronograph {
   border-radius: 5px;
   border: solid 1px #000;
   background-color: #eee;
@@ -22,7 +22,7 @@
   width: 160px;
 }
 
-.chronometer__screen,
+.chronograph__screen,
 .splitchrono__screen {
   background-color: rgb(111, 122, 118);
   border: solid 1px #000;
@@ -39,7 +39,7 @@
   width: 150px;
 }
 
-.chronometer__screen_ms,
+.chronograph__screen_ms,
 .splitchrono__screen_ms {
   font-size: 18px;
   margin: -2px 7px 0 0;
@@ -47,7 +47,7 @@
   text-align: right;
 }
 
-.chronometer__button {
+.chronograph__button {
   border: solid 1px #000;
   border-radius: 15px;
   color: white;
@@ -66,29 +66,29 @@
   width: 69px;
 }
 
-.chronometer__button:hover,
+.chronograph__button:hover,
 .splitchrono__button:hover {
   text-shadow: 0 0 8px #fff, 0 0 8px #000;
 }
 
-.chronometer__button_start {
+.chronograph__button_start {
   background-color: green;
   left: 4px;
 }
 
-.chronometer__button_pause {
+.chronograph__button_pause {
   background-color: blue;
   display: none;
   left: 4px;
 }
 
-.chronometer__button_resume {
+.chronograph__button_resume {
   background-color: green;
   display: none;
   left: 4px;
 }
 
-.chronometer__button_clear {
+.chronograph__button_clear {
   background-color: red;
   right: 4px;
 }
