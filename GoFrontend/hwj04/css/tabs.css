@@ -36,7 +36,7 @@
 }
 
 .tab--inactive:hover {
-  background-image: linear-gradient(#e6e6e6 0%, #ccc 50%, #e6e6e6 100% );
+  background-image: linear-gradient(#e6e6e6 0%, #ccc 50%, #e6e6e6 100%);
   border: 1px solid #666;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   cursor: pointer;
