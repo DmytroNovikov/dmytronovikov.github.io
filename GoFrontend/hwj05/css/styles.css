@@ -182,6 +182,14 @@ input.css-checkbox:checked + label.css-checkbox:hover:before {
 
 /*   END OF CAROUSEL IMPLEMENTATION   */
 
+/*   FOTORAMA IMPLEMENTATION   */
+.fotorama-section {
+  margin: 20px auto;
+  width: 800px;
+}
+/*   END OF FOTORAMA IMPLEMENTATION   */
+
+
 /******************************************************************************
 * clearfix
 ******************************************************************************/
