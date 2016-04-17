@@ -19,7 +19,7 @@ $(function() {
       position.left = (position.left + $(this).width() - SUBMENU_SHIFT) + "px";
       var $submenu = $(this).children('ul');
       $submenu.css("top", position.top).css("left", position.left);
-      $submenu.animate({width:'toggle'}, ANIMATION_DURATION);
+      $submenu.animate({width:'toggle', height:'toggle'}, ANIMATION_DURATION);
     },
     function(e){
       $(this).children('ul').animate({width:'toggle'}, ANIMATION_DURATION);
